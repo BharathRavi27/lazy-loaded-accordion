@@ -9,7 +9,7 @@ import { AccordionDirective } from './accordion.directive';
 export class AccordionComponent implements OnInit {
   isOpen: boolean = false;
   @ContentChild(AccordionDirective, { read: TemplateRef })
-  accrordionBody: TemplateRef<unknown>;
+  accordionBodyRef: TemplateRef<unknown>;
   constructor() {}
   ngOnInit(): void {}
 }

@@ -4,8 +4,8 @@
   </div>
   <hr />
   <div *ngIf="isOpen" class="accordion-content">
-    <ng-container *ngIf="accrordionBody; else eagerBody">
-      <ng-container *ngTemplateOutlet="accrordionBody"></ng-container>
+    <ng-container *ngIf="accordionBodyRef; else eagerBody">
+      <ng-container *ngTemplateOutlet="accordionBodyRef"></ng-container>
     </ng-container>
     <ng-template #eagerBody>
       <ng-content select="[accordionBody]"></ng-content>

@@ -1,23 +1,13 @@
 <app-accordion>
-  <!-- <ng-template accordionBody>
+  <!-- to lazy load -->
+  <ng-template accordion-body>
     <app-post></app-post>
-  </ng-template> -->
-  <div accordionBody>
+  </ng-template>
+  <!-- lazy load ends -->
+
+  <!-- to eager load -->
+  <!-- <div accordionBody>
     <app-post></app-post>
-  </div>
+  </div> -->
+  <!-- eager load ends -->
 </app-accordion>
-
-<!-- <button type="button" class="btn btn-primary" (click)="openModal(template)">
-  Create template modal
-</button>
-
-<div #template>
-  <app-modal></app-modal>
-</div> -->
-
-<!-- <form [formGroup]="form">
-  <input type="text" formControlName="name" placeholder="name" />
-</form>
-
-<p>{{ form.controls["name"].touched }}</p>
-<p>{{ form.value | json }}</p> -->

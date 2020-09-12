@@ -8,19 +8,6 @@ import { ApiService } from './api.service';
   templateUrl: './app.component.html',
 })
 export class AppComponent implements OnInit {
-  // title = 'lazy-modal';
-  // modalRef: BsModalRef;
-  // form: FormGroup;
-  // constructor(private modalService: BsModalService, private fb: FormBuilder) {
-  //   this.form = this.fb.group({
-  //     name: new FormControl(''),
-  //   });
-  // }
-
-  // openModal(template: TemplateRef<any>) {
-  //   this.modalRef = this.modalService.show(template);
-  // }
-
   constructor(private api: ApiService) {}
   ngOnInit() {}
 }
